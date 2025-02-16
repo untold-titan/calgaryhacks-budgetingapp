@@ -1,9 +1,8 @@
 <script>
     import { initializeApp } from "@firebase/app";
-    import { setContext } from "svelte";
   
     // Init firebase at the root of the app so it can be passed down into the rest of the app.
-    let { data } = $props();
+    let { data, children} = $props();
   
     const firebaseConfig = {
       apiKey: data.firebaseKeys.apikey,
@@ -15,4 +14,4 @@
     
     export const app = initializeApp(firebaseConfig);
   </script>
-  <slot></slot>
+  {@render children()}

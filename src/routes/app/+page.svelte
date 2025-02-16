@@ -5,9 +5,6 @@
     userStore.subscribe(userData => {
         user = userData
     })
-
-    console.log("Logged In Successfully")
-    console.log(user)
 </script>
 
 <!-- <p>dashboard</p> -->
