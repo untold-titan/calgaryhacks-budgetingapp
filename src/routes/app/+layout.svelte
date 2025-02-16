@@ -14,7 +14,6 @@
   });
 
   onMount(() => {
-    console.log(user);
     if (user == undefined) {
       goto("/login");
     }
@@ -27,9 +26,9 @@
   </div>
   <h1>SoloSense</h1>
   <div class="user">
-    {#if user != undefined}
+    <!-- {#if user != undefined}
       <p>{user.email}</p>
-    {/if}
+    {/if} -->
   </div>
 </div>
 {#if navOpen}
