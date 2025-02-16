@@ -40,15 +40,15 @@
 
 <style>
   .logo-img {
-    position: relative;
+    position: absolute;
     top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
     width: 10vw;
     z-index: 10;
   }
 
   .top-bar {
-    top: 0;
-    left: 0;
     width: 100%;
     height: 90px;
     background-color: #202124;
