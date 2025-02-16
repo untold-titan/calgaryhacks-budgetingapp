@@ -78,7 +78,7 @@
 
     // Just making sure things save properly :)
     setTimeout(() => {
-        goto("/app")
+        goto("/app/budgeting")
     },1000)
   }
 </script>
