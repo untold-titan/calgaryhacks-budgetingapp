@@ -40,7 +40,7 @@
     <a href="/budgeting">Dashboard</a>
     <a href="/budgeting">Budgets</a>
     <a href="/budgeting">Tasks</a>
-    <a href="/budgeting">Taxes</a>
+    <a href="/app/taxes">Taxes</a>
 </div>
 {/if}
 <div class="content">
