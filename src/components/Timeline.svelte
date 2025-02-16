@@ -14,7 +14,7 @@
     </div>
     <div class="node flip">
       <div class="nodetext">
-        <h1>Rent</h1>
+        <h1>Groceries</h1>
       </div>
       <img src="/timelinemark.png" />
     </div>
@@ -30,7 +30,7 @@
     transform: scaleX(-1);
   }
   .flip .nodetext {
-    right: -70%;
+    right: -40%;
   }
   .core {
     position: relative;
@@ -47,7 +47,8 @@
     top: 0;
     width: 100%;
     height: calc(100vh - 70px);
-    overflow-x: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
   .node {
     width: 54%;
