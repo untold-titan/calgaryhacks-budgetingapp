@@ -1,6 +1,9 @@
 <!-- svelte-ignore a11y_label_has_associated_control -->
+<script>
+  let {callback} = $props();
+</script>
 <label>Province / Territory of Residence</label><br>
-<select id="location">
+<select id="location" onchange={val => callback(val)}>
   <option value="AB">Alberta</option>
   <option value="BC">British Columbia</option>
   <option value="MB">Manitoba</option>

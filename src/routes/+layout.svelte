@@ -14,4 +14,5 @@
     
     export const app = initializeApp(firebaseConfig);
   </script>
+
   {@render children()}

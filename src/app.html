@@ -4,6 +4,10 @@
 <head>
 	<meta charset="utf-8" />
 	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	<link rel="preload" as="image" href="/corcle.png">
+	<link rel="preload" as="image" href="/corclehalf.png">
+	<link rel="preload" as="image" href="/fullcorcle.png">
+	<link rel="preload" as="image" href="/corclequarter.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<style>
 		@font-face {
@@ -20,6 +24,12 @@
 		body {
 			font-family: raleway;
 			margin: 0;
+			background-color: #141416;
+			color: #ffffff;
+		}
+
+		button{
+			font-family: raleway;
 		}
 	</style>
 	%sveltekit.head%
