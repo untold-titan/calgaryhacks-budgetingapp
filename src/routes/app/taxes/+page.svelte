@@ -1,7 +1,3 @@
-<div class= "content">
-    <img src="/t4.jpg" alt="T4" class="T4-img" postion=relative>
-</div>
-
 
 <div class="introduction">
     <div>
@@ -15,10 +11,17 @@
         <br><br><br><br><br><br><br><br><br>
     </div>
     <div>
+        <div class="tab">
+            <a href="#infoNeeded"style="color:grey">Information Needed</a>
+            <a href="#FilTaxOn"style="color:grey">Filing Taxes Online</a>
+            <a href="#AuthRepre"style="color:grey">Authorizing a representative</a>
+            <a href="#Shipping"style="color:grey">Shipping</a>
+        </div>  
         <img src="/t4.jpg" alt="T4" class="T4-img">
     </div>
 </div>
 
+<a name="infoNeeded" id="infoNeeded"></a>
 <div class="infoNeeded">
     <h1>Information Needed Before Starting</h1>
     <h3>
@@ -38,10 +41,25 @@
         <br> T5 is when you make investments, banks/investment provider
 </div>
 <br><br><br><br><br><br><br>
-<script>    
+<a name="FilTaxOn" id="FilTaxOn"></a>
+
+
+<a name="AuthRepre" id="AuthRepre"></a>
+
+
+<a name="Shipping" id="Shipping"></a>
+
+<script>
+    import { online } from 'svelte/reactivity/window';
+
+    
     /** @type {{ data: import('./$types').PageData }} */
     let { data } = $props();
-    
+    /*     
+    Filing taxes online
+    Authorizing a representative
+    Shipping
+     */
 </script>
 
 <style>
@@ -56,9 +74,22 @@
    
     .T4-img {
       width: 59.5vw;
+      padding: 5px;
       height: auto;         
       bottom: 35px;
-      right: 10px;
-      object-fit: cover;  
+      right: 10px;  
+      object-fit: cover;   
+      margin-top: 20px;
     }
+    .tab {
+        text-align: left;
+        text-indent: -578px;
+        line-height: 50px;
+
+    }
+    a{  
+        padding-left: 105px;
+        padding-right: 105px;
+    }
+    
 </style>
