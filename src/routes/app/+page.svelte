@@ -6,6 +6,3 @@
         user = userData
     })
 </script>
-
-<!-- <p>dashboard</p> -->
-<!-- <p>{user.email}</p> -->
