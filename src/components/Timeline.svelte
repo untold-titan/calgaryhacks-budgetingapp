@@ -78,6 +78,7 @@
     top: 125px;
     left: 20px;
   }
+
   h1 {
     margin: 0;
   }
