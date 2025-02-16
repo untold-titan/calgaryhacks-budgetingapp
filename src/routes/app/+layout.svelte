@@ -8,12 +8,13 @@
 
   let user = $state(undefined);
   let navOpen = $state(false);
-  let currentPage = $state("Home")
+  let currentPage = $state("Home");
   userStore.subscribe((userData) => {
     user = userData;
   });
 
   onMount(() => {
+    console.log(user);
     if (user == undefined) {
       goto("/login");
     }
@@ -24,7 +25,7 @@
   <div class="hamburger">
     <button onclick={() => (navOpen = !navOpen)}>☰</button>
   </div>
-  <h1>App Title</h1>
+  <h1>SoloSense</h1>
   <div class="user">
     {#if user != undefined}
       <p>{user.email}</p>
