@@ -1,3 +1,9 @@
+<div style="display: flex; justify-content: space-between;margin: 0 100px;">
+    <a href="#infoNeeded"style="color:grey">Information Needed</a>
+    <a href="#FilTaxOn"style="color:grey">File Taxes Online</a>
+    <a href="#AuthRepre"style="color:grey">Authorize a Representative</a>
+    <a href="#Shipping" style="color:grey">Filing by Mail/Paper</a>
+</div>
 
 <div class="introduction">
     <div>
@@ -12,12 +18,6 @@
         <br><br><br><br>
     </div>
     <div>
-        <div class="tab">
-            <a href="#infoNeeded"style="color:grey">Information Needed</a>
-            <a href="#FilTaxOn"style="color:grey">Filing Taxes Online</a>
-            <a href="#AuthRepre"style="color:grey">Authorizing a representative</a>
-            <a href="#Shipping"style="color:grey">Shipping</a>
-        </div>  
         <img src="/t4.jpg" alt="T4" class="T4-img">
         <h4>
             <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/completing-filing-information-returns/t4-information-employers/t4-slip.html" target="blank">Blank T4 Form</a>
@@ -40,6 +40,7 @@
     
     <br><br><br><br><br>
 
+    <a name="FilTaxOn" id="FilTaxOn"></a>
     <h1>Filing Taxes Online</h1>
     <h3>To file your taxes online, there's a hanful of options out there that can help you</h3>
     <h3>
@@ -50,6 +51,7 @@
 
     <br><br><br><br><br>
 
+    <a name="AuthRepre" id="AuthRepre"></a>
     <h1>Authorize a Representative</h1>
     <h3>You can authorize a person to be able to file taxes on your behalf</h3>
     <h3>You will need to give them all the <a href="#infoNeeded" style="color:gray">information needed</a></h3>
@@ -59,18 +61,13 @@
     <br><br><br><br><br>
 
     <h1>Filing by Mail/Paper</h1>
+    <a name="Shipping" id="Shipping"></a>
     <h3>If you like pen and paper, you can print the documents and mail them do designated locations</h3>
     <h3>You can order a <a href="https://apps.cra-arc.gc.ca/ebci/cjcf/fpos-scfp/pub/rdr?searchKey=2024+Package#formCatalog" target="blank">T1 tax package</a> (same as T4) to your house, fill it out, then mail it to a <a href="https://www.canada.ca/en/revenue-agency/corporate/contact-information/where-mail-your-paper-t1-return.html" target="blank">designated location </a> </h3>
     <h3>You can also print out your <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package.html" target="blank"> federal and provinvial tax return</a> and file it online or by mail to your <a href="https://www.canada.ca/en/revenue-agency/corporate/contact-information/where-mail-your-paper-t1-return.html" target="blank">designated location </a> </h3>
 </div>
+
 <br><br><br><br><br><br><br>
-<a name="FilTaxOn" id="FilTaxOn"></a>
-
-
-<a name="AuthRepre" id="AuthRepre"></a>
-
-
-<a name="Shipping" id="Shipping"></a>
 
 <script>
     import { online } from 'svelte/reactivity/window';
@@ -103,16 +100,6 @@
       right: 10px;  
       object-fit: cover;   
       margin-top: 20px;
-    }
-    .tab {
-        text-align: left;
-        text-indent: -578px;
-        line-height: 50px;
-
-    }
-    a{  
-        padding-left: 105px;
-        padding-right: 105px;
     }
     
 </style>
