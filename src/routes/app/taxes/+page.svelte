@@ -1,6 +1,4 @@
 
-<!-- padding-left: 105px;
-        padding-right: 105px; -->
 <div style="display: flex; justify-content: space-between;padding-left: 40px; padding-right: 40px; padding-top: 15px">
     <a href="#infoNeeded"style="color:grey">Information Needed</a>
     <a href="#FilTaxOn"style="color:grey">Filing Taxes Online</a>
