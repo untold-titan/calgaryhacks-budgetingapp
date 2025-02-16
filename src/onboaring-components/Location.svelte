@@ -1,6 +1,6 @@
 <!-- svelte-ignore a11y_label_has_associated_control -->
-<label>Province / Territory of Residence</label>
-<select>
+<label>Province / Territory of Residence</label><br>
+<select id="location">
   <option value="AB">Alberta</option>
   <option value="BC">British Columbia</option>
   <option value="MB">Manitoba</option>

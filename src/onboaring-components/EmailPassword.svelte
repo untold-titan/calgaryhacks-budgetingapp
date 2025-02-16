@@ -18,9 +18,8 @@
           console.log(err);
         });
     }
-  // User responses (centralized)
   </script>
-<label>Email</label>
-<input bind:value={email}/><br><br>
-<label>Password</label>
-<input bind:value={password} /><br><br>
+<label>Email</label><br>
+<input type="email" bind:value={email}/><br><br>
+<label>Password</label><br>
+<input type="password" bind:value={password} /><br><br>
