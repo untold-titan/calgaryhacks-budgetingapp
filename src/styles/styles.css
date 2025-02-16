@@ -1,0 +1,31 @@
+.title {
+    font-family: "Raleway";
+    color: black;
+    text-align: center;
+
+}
+
+li {
+  list-style-type: none;
+}
+
+.navbar {
+  color: black !important;
+}
+
+/* Form UI */
+.form {
+  color: black !important;
+}
+
+label {
+    font-family: "Raleway";
+}
+
+input {
+  width: 50%;
+}
+
+input:hover {
+   
+}

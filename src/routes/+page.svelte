@@ -1,5 +1,6 @@
-<h1>Independapp</h1>
-<p>Home landing page</p>
-<p>Links to login and signup</p>
-<a href="/login">Login</a>
-<a href="/signup">Signup</a>
+<script>
+    import Navigation from "../components/Navigation.svelte";
+    import "../styles/styles.css"
+</script>
+  <Navigation/>
+  <h1 class="title">Independapp</h1>
