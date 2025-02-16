@@ -38,24 +38,24 @@
     <div class="header" style="padding-bottom: 40px;">
       <button onclick={() => (navOpen = !navOpen)}>X</button>
     </div>
-    <a onclick={() => navOpen = !navOpen} href="/app">Dashboard</a>
-    <a onclick={() => navOpen = !navOpen} href="/app/budgeting">Budgets</a>
-    <a onclick={() => navOpen = !navOpen} href="/app/tasks">Tasks</a>
-    <a onclick={() => navOpen = !navOpen} href="/app/taxes">Taxes</a>
-</div>
+    <a onclick={() => (navOpen = !navOpen)} href="/app">Dashboard</a>
+    <a onclick={() => (navOpen = !navOpen)} href="/app/budgeting">Budgets</a>
+    <a onclick={() => (navOpen = !navOpen)} href="/app/tasks">Tasks</a>
+    <a onclick={() => (navOpen = !navOpen)} href="/app/taxes">Taxes</a>
+  </div>
 {/if}
 <div class="content">
   {@render children()}
 </div>
 
 <style>
-    a{
-        display: block;
-        font-size: 40px;
-        text-decoration: none;
-        color: #ffffff;
-        padding: 5px;
-    }
+  a {
+    display: block;
+    font-size: 40px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px;
+  }
   .content {
     height: calc(100vh - 70px);
     background-color: #141416;
@@ -67,6 +67,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
+    z-index: 10;
   }
   .nav-drawer {
     position: absolute;
@@ -76,6 +77,7 @@
     top: 0;
     left: 0;
     background-color: #2d2f31;
+    z-index: 11;
   }
   button {
     width: 40px;
