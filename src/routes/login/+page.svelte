@@ -1,4 +1,5 @@
 <script>
+  import "../../styles/styles.css";
   import { goto } from "$app/navigation";
   import { user } from "$lib/stores";
   import { getAuth } from "@firebase/auth";
@@ -12,7 +13,7 @@
     signInWithEmailAndPassword(auth, email, password)
       .then((result) => {
         user.set(result.user);
-        goto("/app");
+        goto("/app/budgeting");
       })
       .catch((err) => {
         console.log(err);

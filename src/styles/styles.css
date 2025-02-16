@@ -1,10 +1,7 @@
-.title {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-    text-align: center;
-}
-
 .flex {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-items: row;
   text-align: center;
@@ -25,6 +22,28 @@ li {
   color: black !important;
 }
 
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+.modal-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Form UI */
 .form {
   color: black !important;
@@ -35,7 +54,7 @@ li {
 }
 
 .button {
-  background-color: #08c580; /* Green */
+  background-color: #174ea6; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -52,23 +71,20 @@ li {
 }
 
 label {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 17px;
 }
 
 input {
-  width: 50%;
+  width: 400px;
   padding: 12px 8px;
   margin: 8px 8px;
   box-sizing: border-box;
   font-size: 17px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .expenseName {
   width: 33%;
   margin: 8px 8px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 input:focus {

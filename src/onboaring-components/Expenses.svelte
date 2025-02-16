@@ -1,13 +1,13 @@
 <script>
-    let expenses = [{ name: "", amount: "" }]; // Store expenses in an array
+    let {expenses} = $props(); // Store expenses in an array
 
     function addExpense() {
-        expenses = [...expenses, { name: "", amount: "", date: ""}]; // Add a new empty expense object
+        expenses.push({ name: "", amount: "", date: ""}); // Add a new empty expense object
     }
 </script>
 
 <div class="flex">
-    <button on:click={addExpense} class="button" style="background-color: darkblue !important;">
+    <button onclick={addExpense} class="button" style="background-color: darkblue !important;">
         New Expense
     </button>
 </div>
