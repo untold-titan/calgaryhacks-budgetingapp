@@ -10,5 +10,5 @@
     console.log(user)
 </script>
 
-<p>dashboard</p>
-<p>{user.email}</p>
+<!-- <p>dashboard</p> -->
+<!-- <p>{user.email}</p> -->
