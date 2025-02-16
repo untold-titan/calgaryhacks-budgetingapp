@@ -101,8 +101,8 @@
 {#if dialog}
   <div class="dialog" in:fade out:fade>
     <h1>New Expense</h1>
-    <input bind:value={expenseName} placeholder="Expense Name" />
-    <input bind:value={expenseAmnt} placeholder="Amount" type="number" />
+    <input bind:value={expenseName} placeholder="Expense Name"/>
+    <input bind:value={expenseAmnt} placeholder="Amount" type="number"/>
     <input bind:value={expenseDate} type="date" /><br />
     <button onclick={() => (dialog = false)}>Cancel</button>
     <button onclick={AddNewExpense}>Create!</button>
