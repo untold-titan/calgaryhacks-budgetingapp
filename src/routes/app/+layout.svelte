@@ -26,9 +26,9 @@
   </div>
   <h1>SoloSense</h1>
   <div class="user">
-    <!-- {#if user != undefined}
+    {#if user != undefined}
       <p>{user.email}</p>
-    {/if} -->
+    {/if}
   </div>
 </div>
 {#if navOpen}
@@ -37,7 +37,7 @@
     <div class="header" style="padding-bottom: 40px;">
       <button onclick={() => (navOpen = !navOpen)}>X</button>
     </div>
-    <a onclick={() => (navOpen = !navOpen)} href="/app">Dashboard</a>
+    <!-- <a onclick={() => (navOpen = !navOpen)} href="/app">Dashboard</a> -->
     <a onclick={() => (navOpen = !navOpen)} href="/app/budgeting">Budgets</a>
     <a onclick={() => (navOpen = !navOpen)} href="/app/tasks">Tasks</a>
     <a onclick={() => (navOpen = !navOpen)} href="/app/taxes">Taxes</a>
@@ -102,7 +102,6 @@
     display: flex;
     align-items: center;
     height: 70px;
-
     color: #ffffff;
   }
 </style>
