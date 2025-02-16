@@ -1,8 +1,13 @@
 <script>
   import { goto } from "$app/navigation";
+  import Navigation from "../../components/Navigation.svelte";
   import { user } from "$lib/stores";
   import { getAuth } from "@firebase/auth";
   import { createUserWithEmailAndPassword } from "firebase/auth";
+  import "../../styles/styles.css"
+  import EmailPassword from "../../onboaring-components/EmailPassword.svelte";
+  import AnnualIncome from "../../onboaring-components/AnnualIncome.svelte";
+    import Location from "../../onboaring-components/Location.svelte";
   const auth = getAuth();
 
   let email = $state();
@@ -18,11 +23,17 @@
         console.log(err);
       });
   }
+const questions = ["Email and Password", "Annual Income", "Location"]
+const components = [EmailPassword, AnnualIncome, Location]
 </script>
+<Navigation/>
 
-<p>Signup Page</p>
-<label>Email</label>
-<input bind:value={email} />
-<label>Password</label>
-<input bind:value={password} />
-<button onclick={CreateNewUser}>Sign up</button>
+<h1 class="title">Signup Page</h1>
+<div class="signup">
+<form>
+    <EmailPassword/>
+    <AnnualIncome/><br><br>
+    <Location/><br><br>
+    <button class="button" onclick={CreateNewUser}>Sign up</button>
+</form>
+</div>
