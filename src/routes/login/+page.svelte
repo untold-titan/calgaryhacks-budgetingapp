@@ -32,9 +32,9 @@
 <div class="signup">
   <h1>Login</h1>
   <!-- <label>Email</label> -->
-  <input bind:value={email} placeholder="Email"/><br>
+  <input bind:value={email} type="email" placeholder="johndoe@gmail.com"/><br>
   <!-- <label>Password</label><br> -->
-  <input bind:value={password} placeholder="Password"/><br>
+  <input bind:value={password} type="password" placeholder="Password"/><br>
   <button class="button" onclick={LoginUser}>Login</button>
 </div>
 
