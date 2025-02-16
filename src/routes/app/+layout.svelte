@@ -14,6 +14,7 @@
   });
 
   onMount(() => {
+    console.log(user)
     if (user == undefined) {
       goto("/login");
     }
@@ -24,11 +25,11 @@
   <div class="hamburger">
     <button onclick={() => (navOpen = !navOpen)}>☰</button>
   </div>
-  <h1>App Title</h1>
+  <h1>SoloSense</h1>
   <div class="user">
-    {#if user != undefined}
+    <!-- {#if user != undefined}
       <p>{user.email}</p>
-    {/if}
+    {/if} -->
   </div>
 </div>
 {#if navOpen}
