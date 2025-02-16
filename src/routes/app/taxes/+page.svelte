@@ -1,5 +1,4 @@
 
-
 <div class="introduction">
     <div>
         <h1><br><br><br>Introduction</h1>
@@ -13,6 +12,12 @@
         <br><br><br><br>
     </div>
     <div>
+        <div class="tab">
+            <a href="#infoNeeded"style="color:grey">Information Needed</a>
+            <a href="#FilTaxOn"style="color:grey">Filing Taxes Online</a>
+            <a href="#AuthRepre"style="color:grey">Authorizing a representative</a>
+            <a href="#Shipping"style="color:grey">Shipping</a>
+        </div>  
         <img src="/t4.jpg" alt="T4" class="T4-img">
         <h4>
             <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/completing-filing-information-returns/t4-information-employers/t4-slip.html" target="blank">Blank T4 Form</a>
@@ -59,10 +64,25 @@
     <h3>You can also print out your <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package.html" target="blank"> federal and provinvial tax return</a> and file it online or by mail to your <a href="https://www.canada.ca/en/revenue-agency/corporate/contact-information/where-mail-your-paper-t1-return.html" target="blank">designated location </a> </h3>
 </div>
 <br><br><br><br><br><br><br>
-<script>    
+<a name="FilTaxOn" id="FilTaxOn"></a>
+
+
+<a name="AuthRepre" id="AuthRepre"></a>
+
+
+<a name="Shipping" id="Shipping"></a>
+
+<script>
+    import { online } from 'svelte/reactivity/window';
+
+    
     /** @type {{ data: import('./$types').PageData }} */
     let { data } = $props();
-    
+    /*     
+    Filing taxes online
+    Authorizing a representative
+    Shipping
+     */
 </script>
 
 <style>
@@ -77,9 +97,22 @@
    
     .T4-img {
       width: 59.5vw;
+      padding: 5px;
       height: auto;         
       bottom: 35px;
-      right: 10px;
-      object-fit: cover;  
+      right: 10px;  
+      object-fit: cover;   
+      margin-top: 20px;
     }
+    .tab {
+        text-align: left;
+        text-indent: -578px;
+        line-height: 50px;
+
+    }
+    a{  
+        padding-left: 105px;
+        padding-right: 105px;
+    }
+    
 </style>
