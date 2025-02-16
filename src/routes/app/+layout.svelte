@@ -37,10 +37,10 @@
     <div class="header" style="padding-bottom: 40px;">
       <button onclick={() => (navOpen = !navOpen)}>X</button>
     </div>
-    <a href="/budgeting">Dashboard</a>
-    <a href="/budgeting">Budgets</a>
-    <a href="/budgeting">Tasks</a>
-    <a href="/budgeting">Taxes</a>
+    <a onclick={() => navOpen = !navOpen} href="/app">Dashboard</a>
+    <a onclick={() => navOpen = !navOpen} href="/app/budgeting">Budgets</a>
+    <a onclick={() => navOpen = !navOpen} href="/app/tasks">Tasks</a>
+    <a onclick={() => navOpen = !navOpen} href="/app/taxes">Taxes</a>
 </div>
 {/if}
 <div class="content">
@@ -75,8 +75,6 @@
     top: 0;
     left: 0;
     background-color: #2d2f31;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
   }
   button {
     width: 40px;
